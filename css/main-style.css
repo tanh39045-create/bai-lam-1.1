@@ -1,0 +1,176 @@
+@charset "utf-8";
+/* CSS Document */
+@import url('https://fonts.googleapis.com/css2?family=Mea+Culpa&family=Quicksand:wght@300..700&display=swap');
+/* LÊNH import là dẫn link font từ google vào style*/
+body
+{
+	background-color:#ECECEC; /*màu nền của trang web*/
+	font-family:"Quicksand",Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+	color: #423F3F; /*màu chữ cho body text*/
+	font-size: 16px	 
+}
+h1
+{
+	font-size: 48px;
+	font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif"
+}
+h2{ font-size: 40px; }
+h3{ font-size: 36px}
+h4{ font-size: 30px}
+h5{ font-size: 24px}
+h6{ font-size: 18px}
+.font-script
+{
+	 font-family: "Mea Culpa", cursive;	
+}
+.container 
+{
+	width: 80%;
+	margin: auto;
+}
+*{ box-sizing: border-box} /* yêu cầu tất cả các box có viền hoặc padding đều inside*/
+.col-1{ width: 8.33%} /* .col-1: 100%/12 phần=8.33%*/
+.col-2{ width: 16.66%}
+.col-3{ width: 25%}
+.col-4{ width: 33.33%}
+.col-5{ width: 41.66%}
+.col-6{ width: 50%}
+.col-7{ width: 58.33%}
+.col-8{ width: 66.66%}
+.col-9{ width: 75%}
+.col-10{ width: 83.33%}
+.col-11{ width: 91.66%}
+.col-12{ width: 100%}
+[class*="col-"]
+{
+	
+	padding: 16px
+}
+.row
+{
+	display: flex;
+	flex-wrap: wrap
+}
+.img-100{ width: 100%; height: auto}
+.text-center{ text-align:center}
+.bg-footer
+{
+	background-color: #9A9A9A;
+	padding-top: 50px;
+	padding-bottom: 50px
+}
+/*-- tạo 1 hệ thống màu (chính:primary / Phu: secondary / body-text/ sáng: light / tối : dark/ báo thành công: success/ báo lỗi: danger*/
+.text-primary { color: #EB0E13}
+.text-secondary { color: #FFF200}
+.text-dark{ color: #000}
+.text-light{ color: #3E3E3E}
+.text-body{ color: #424141}
+.text-success{ color: greenyellow}
+.text-danger{ color: red}
+.text-gradient {
+	background-image: linear-gradient(45deg,red,green, pink, blue);
+	 -webkit-text-fill-color: transparent;
+	 -webkit-background-clip: text;
+}.box-shadow-1{ box-shadow:5px 5px 10px rgba(0,0,0,0.1)}
+.text-shadow{text-shadow: 4px 4px 10px rgba(0,0,0,0.2);}
+/*-- style hệ thống màu nền cho web*/
+.bg-primary { background-color:#ECECEC }
+.bg-secondary { background-color: #FFF200}
+.bg-dark{ background-color: #000}
+.bg-light{ background-color: #ddd}
+.bg-light{ background-color: #ddd}
+.bg-white{ background-color:#FFFFFF }
+.bg-success{ background-color:#FF0004 }
+.bg-danger{ background-color: red}
+.bg-gradient{background: #EEAECA;
+background: radial-gradient(circle,rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%);}
+a{color:red;text-decoration:none;font-weight:bold}
+a:hover{color:#7b0507;}
+.btn-outline-primary{
+	background-color: #EB0E13;
+	color: #000000;
+	border-radius: 50px;
+	padding: 8px 16px;
+	font-weight: 600
+}
+.btn-primary:hover	
+{
+	background-color: #333;
+	color: #fff
+}
+.navbar{ border-bottom:solid #68A875 }
+	.navbar ul
+{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	display: flex
+}
+/*nut chỉ có dường viền và khi hover mới fill lên*/
+.btn-outline-primary {
+	border: 1px solid #FFF200;
+	color: #333;
+	border-radius: 50px; /*bo góc 4 chiều*/
+	padding: 8px 16px;
+	font-weight: 600;
+	background: transparent
+	
+}
+.btn-outline-primary:hover
+{
+	background-color:#FFF200;
+	color: #fff
+	
+}
+.navbar ul li
+{
+	
+}
+.navbar ul li a
+{
+	padding:8px 16px;
+	background: #443ab4;
+background: radial-gradient(circle,rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%);;
+	color: #eee;
+	margin: 5px;
+	display: block
+}
+.navbar ul li a:hover
+{
+	background-color:red;
+}
+box-center{ margin: auto}
+.form-control
+{
+	width: 100%;
+	border: #ddd solid 1px; 
+	padding: 8px;
+	border-radius: 40px;
+	margin-top: 8px;
+	margin-bottom: 16px
+}
+label
+{
+margin-left: 4px;
+font-weight: 500;
+}
+tableAttributes Style {
+    border-top-width: 0px;
+    border-bottom-width: 0px;
+    border-left-width: 0px;
+    border-right-width: 0px;
+    width: 80%;
+    -webkit-border-horizontal-spacing: 1px;
+    -webkit-border-vertical-spacing: 1px;
+    background-color: rgb(0, 0, 139);
+}
+table {
+    display: table;
+    border-collapse: separate;
+    box-sizing: border-box;
+    text-indent: initial;
+    unicode-bidi: isolate;
+    border-spacing: 2px;
+    border-color: gray;
+
+}
